@@ -1,14 +1,14 @@
 const displayComputerPick = document.getElementById('computer-pick');
-const displayYourPick = document.getElementById('your-pick');
+const displayPlayerPick = document.getElementById('player-pick');
 const displayWinner = document.getElementById('winner');
 const options = document.querySelectorAll('button');
-var userChoice
+var playerChoice
 var computerChoice
 var winner
 
 options.forEach(option => option.addEventListener('click', (e) => {
-    userChoice = e.target.id;
-    displayYourPick.innerHTML = userChoice;
+    playerChoice = e.target.id;
+    displayPlayerPick.innerHTML = playerChoice;
     generateComputerchoice();
     getResult();
 }));
@@ -31,25 +31,25 @@ function generateComputerchoice() {
 }
 
 function getResult() {
-    if (computerChoice === userChoice) {
+    if (computerChoice === playerChoice) {
         winner = 'Tie'
     }
-    if (computerChoice === 'rock' && userChoice === 'paper') {
+    if (computerChoice === 'rock' && playerChoice === 'paper') {
         winner = 'You Win'
     }
-    if (computerChoice === 'rock' && userChoice === 'scissor') {
+    if (computerChoice === 'rock' && playerChoice === 'scissor') {
         winner = 'You Lost'
     }
-    if (computerChoice === 'paper' && userChoice === 'scissor') {
+    if (computerChoice === 'paper' && playerChoice === 'scissor') {
         winner = 'You Win'
     }
-    if (computerChoice === 'paper' && userChoice === 'rock') {
+    if (computerChoice === 'paper' && playerChoice === 'rock') {
         winner = 'You Lost'
     }
-    if (computerChoice === 'scissor' && userChoice === 'rock') {
+    if (computerChoice === 'scissor' && playerChoice === 'rock') {
         winner = 'You Win'
     }
-    if (computerChoice === 'scissor' && userChoice === 'paper') {
+    if (computerChoice === 'scissor' && playerChoice === 'paper') {
         winner = 'You Lost'
     }
     displayWinner.innerHTML = winner;
