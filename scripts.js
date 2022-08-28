@@ -1,7 +1,7 @@
 const displayComputerPick = document.getElementById('computer-pick');
 const displayPlayerPick = document.getElementById('player-pick');
 const displayWinner = document.getElementById('winner');
-const options = document.querySelectorAll('#rock,#paper,#scossor');
+const options = document.querySelectorAll('#rock,#paper,#scissor');
 const displayScorePlayer = document.getElementById('scorePlayer');
 const displayScoreComputer = document.getElementById('scoreComputer');
 
