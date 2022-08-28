@@ -14,6 +14,31 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/projects/Projects.html">Back</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects/Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container-sm">
         <div class="text-center">
 
@@ -24,9 +49,11 @@
             <h3 class="col-auto">Winner: <span id="winner"></span></h3>
 
             <div id="RPS">
-                <button type="button" class="col-auto btn" id="rock"> <i class="fa-solid fa-guitar"></i></button>
-                <button type="button" class="col-auto btn" id="paper"><i class="fa-solid fa-paper-plane"></i></button>
-                <button type="button" class="col-auto btn" id="scissor"><i class="fa-solid fa-scissors"></i></button>
+                <button type="button" class="col-auto btn picks" id="rock"> <i class="fa-solid fa-guitar"></i></button>
+                <button type="button" class="col-auto btn picks" id="paper"><i
+                        class="fa-solid fa-paper-plane"></i></button>
+                <button type="button" class="col-auto btn picks" id="scissor"><i
+                        class="fa-solid fa-scissors"></i></button>
             </div>
 
             <div class="row text-center" id="score-board">

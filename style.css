@@ -1,9 +1,9 @@
-* {
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+*/
 body {
 
     background-image: linear-gradient(90deg, gray, black);
@@ -35,4 +35,8 @@ h6 {
 #RPS {
     padding-top: 5%;
     padding-bottom: 10%;
+}
+
+a:link {
+    color: white;
 }

@@ -1,10 +1,10 @@
 const displayComputerPick = document.getElementById('computer-pick');
 const displayPlayerPick = document.getElementById('player-pick');
 const displayWinner = document.getElementById('winner');
-const options = document.querySelectorAll('button');
+const options = document.querySelectorAll('#rock,#paper,#scossor');
 const displayScorePlayer = document.getElementById('scorePlayer');
 const displayScoreComputer = document.getElementById('scoreComputer');
-const resetScoreBtn = document.getElementById('reset-score');
+
 var playerChoice;
 var computerChoice;
 var winner;
