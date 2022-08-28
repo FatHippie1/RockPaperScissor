@@ -1,7 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    display: flex;
-    background-image: linear-gradient(90deg, white, black, white);
-    color: forestgreen;
+
+    background-image: linear-gradient(90deg, gray, black);
+    color: rgb(36, 221, 36);
+    min-height: 100vh;
 }
 
 .fa-solid {
@@ -12,11 +19,20 @@ body {
 
 .btn {
     color: black;
-    background-color: forestgreen;
+    background-color: rgb(36, 221, 36);
     margin: 0px;
 
 }
 
+h1 {
+    padding: 5%;
+}
+
 h6 {
-    color: greenyellow;
+    color: rbg(36, 221, 36);
+}
+
+#RPS {
+    padding-top: 5%;
+    padding-bottom: 10%;
 }

@@ -4,11 +4,13 @@ const displayWinner = document.getElementById('winner');
 const options = document.querySelectorAll('button');
 const displayScorePlayer = document.getElementById('scorePlayer');
 const displayScoreComputer = document.getElementById('scoreComputer');
+const resetScoreBtn = document.getElementById('reset-score');
 var playerChoice;
 var computerChoice;
 var winner;
 var computerWin = 0;
 var playerWin = 0;
+var resetScore = 0;
 
 options.forEach(option => option.addEventListener('click', function (e) {
     if (e.target !== this) {
@@ -21,6 +23,7 @@ options.forEach(option => option.addEventListener('click', function (e) {
     console.log('player:' + ' ' + playerChoice);
     generateComputerchoice();
     getResult();
+
 }));
 
 function generateComputerchoice() {
@@ -60,4 +63,8 @@ function getResult() {
     displayScorePlayer.innerHTML = playerWin;
     displayScoreComputer.innerHTML = computerWin;
 }
+
+
+
+
 

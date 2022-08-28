@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-sm">
         <div class="text-center">
 
 
@@ -23,22 +23,21 @@
             <h3 class="col-auto">Your Pick: <span id="player-pick"></span></h3>
             <h3 class="col-auto">Winner: <span id="winner"></span></h3>
 
-            <div>
+            <div id="RPS">
                 <button type="button" class="col-auto btn" id="rock"> <i class="fa-solid fa-guitar"></i></button>
                 <button type="button" class="col-auto btn" id="paper"><i class="fa-solid fa-paper-plane"></i></button>
                 <button type="button" class="col-auto btn" id="scissor"><i class="fa-solid fa-scissors"></i></button>
             </div>
 
-            <div class="row text-center">
+            <div class="row text-center" id="score-board">
                 <h6 class="col-3">Player: <p id="scorePlayer"></p>
                 </h6>
-                <h1 class="col-6">Score</h1>
+                <h1 class="col-6">Score
+                </h1>
                 <h6 class="col-3">Computer: <p id="scoreComputer"></p>
                 </h6>
             </div>
         </div>
-
-
         <script src="scripts.js"></script>
     </div>
 </body>
